@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import book from "../assets/book.jpg";
+import book from "../assets/book.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const Home = ({ data, setData, search, setSearch }) => {
@@ -18,9 +18,9 @@ const Home = ({ data, setData, search, setSearch }) => {
   };
 
   return (
-    <div className="w-full h-screen  flex flex-col items-center justify-center gap-16 md:flex-row md:justify-around ">
+    <div className="w-full h-screen  flex flex-col items-center justify-center md:gap-12 lg:gap-16 md:flex-row md:justify-evenly ">
       <img
-        className="h-[300px] w-[300px] md:h-[360px] md:w-[360px] lg:h-[450px] lg:w-[450px] object-cover rounded-xl"
+        className="h-[300px] w-[340px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] object-contain"
         src={book}
         alt=""
       />

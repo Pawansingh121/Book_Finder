@@ -1,9 +1,9 @@
 import React from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const SingleCard = ({ show, setShow, item, setItem }) => {
+const SingleCard = ({ setShow, item }) => {
   return (
-    <div className="w-full min-h-screen max-h-full  bg-gray-100 flex  justify-center pt-16  ">
+    <div className="w-full min-h-screen max-h-full  bg-gray-100 flex  justify-center items-center pt-16  ">
       {item.map((elm, id) => {
         let thumbnail =
           elm.volumeInfo.imageLinks && elm.volumeInfo.imageLinks.smallThumbnail;
